@@ -1,0 +1,161 @@
+/* Author: Furkan Ongoren */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --body-bg-clr: #19a2ae;
+  --card-bg-clr: white;
+  --primary-ff-clr: #2d3248;
+  --primary-ff: 'Kumbh Sans', sans-serif;
+  --profile-avatar-br: 5rem;
+  --profile-bg-pattern: url("images/bg-pattern-card.svg");
+  --secondary-ff-clr: #6a6f81;
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--body-bg-clr);
+  overflow: hidden;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+body .container .pattern-top {
+  position: relative;
+  top: -50rem;
+}
+
+body .container .pattern-bottom {
+  position: relative;
+  top: 30rem;
+  left: -5rem;
+}
+
+#main {
+  /* card wrapper */
+  background-color: var(--card-bg-clr);
+  border-radius: 10px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 326px;
+}
+
+/* profile background wrapper */
+.profile-bg-wrap {
+  height: 140px;
+}
+
+.profile-bg-wrap .profile-bg-image {
+  height: 100%;
+}
+
+/* card top */
+.profile-header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-header-wrap img {
+  border-radius: var(--profile-avatar-br);
+  border: 5px solid white;
+  position: relative;
+  top: -50px;
+}
+
+.profile-header-wrap h2 {
+  color: var(--primary-ff-clr);
+  font-family: var(--primary-ff);
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  margin-top: -35px;
+}
+
+.profile-header-wrap h2 span {
+  color: var(--secondary-ff-clr);
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.profile-header-wrap h3 {
+  color: var(--secondary-ff-clr);
+  font-family: var(--primary-ff);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.profile-footer {
+  border-top: 1px solid #979797;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 15px;
+  padding: 2rem;
+}
+
+.profile-footer .profile-footer-stats {
+  text-align: center;
+}
+
+.profile-footer h2 {
+  color: var(--primary-ff-clr);
+  font-family: var(--primary-ff);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.profile-footer h3 {
+  color: var(--secondary-ff-clr);
+  font-family: var(--primary-ff);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#author {
+  padding: 10px;
+  text-align: center;
+  font-family: var(--primary-ff);
+  font-weight: 400;
+  color: var(--primary-ff-clr);
+}
+
+@media all and (min-width: 720px) {
+  #main {
+    width: 350px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
